@@ -59,5 +59,57 @@ ls
 cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 ssh bandit12@bandit.labs.overthewire.org -p 2220
+ls
+mkdir /tmp/newfolder
+cp data.txt /tmp/newfolder
+xxd -r data.txt dataR
+mv dataR data2.gz
+gzip -d data2.gz
+mv data2 data3.bz2
+bzip2 -d data3.bz2
+mv data3 data4.gz
+gzip -d data4.gz
+tar -xvf data4
+tar -xvf data5.bin
+mv data6.bin data7.bz2
+bzip2 -d data7.bz2
+tar -xvf data7
+mv data8.bin data9.gz
+gzip -d data9.gz
+cat data9
+FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+ls
+cat sshkey.private
+scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private .
+ssh -i sshkey.private -p 2220 bandit14@bandit.labs.overthewire.org
+cd /etc/bandit_pass/
+cat bandit14
+MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+nc localhost 30000
+MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+ssh bandit15@bandit.labs.overthewire.org -p 2220
+openssl s_client -connect localhost:30001 
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
