@@ -97,8 +97,7 @@ ssh bandit16@bandit.labs.overthewire.org -p 2220
 nmap -A localhost -p 31000-32000
 cat /etc/bandit_pass/bandit16
 kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
-openssl s_client -connect localhost:31790
-kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+echo "kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx" | openssl s_client -connect localhost:31790 -quiet
 -----BEGIN RSA PRIVATE KEY-----
 MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
 imZzeyGC0gtZPGujUSxiJSWI/oTqexh+cAMTSMlOJf7+BrJObArnxd9Y7YT2bRPQ
@@ -126,7 +125,6 @@ YOdjHdSOoKvDQNWu6ucyLRAWFuISeXw9a/9p7ftpxm0TSgyvmfLF2MIAEwyzRqaM
 dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
 vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 -----END RSA PRIVATE KEY-----
-
 
 
 
