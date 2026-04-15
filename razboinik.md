@@ -125,6 +125,34 @@ YOdjHdSOoKvDQNWu6ucyLRAWFuISeXw9a/9p7ftpxm0TSgyvmfLF2MIAEwyzRqaM
 dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
 vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 -----END RSA PRIVATE KEY-----
+ssh -i .\bandit17.key bandit17@bandit.labs.overthewire.org -p 2220
+diff passwords.new passwords.old
+x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+390zFj2NETFVZkqYw8UEFdN6h40oGVtT
+ssh -T bandit18@bandit.labs.overthewire.org -p 2220
+x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+ls
+cat readme
+cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+ssh bandit19@bandit.labs.overthewire.org -p 2220
+ls
+file bandit20-do
+./bandit20-do
+./bandit20-do cat /etc/bandit_pass/bandit20
+0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+ssh bandit20@bandit.labs.overthewire.org -p 2220
+ls
+./suconnect 12345
+echo -n "0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO" | nc -lp 12345 & ./suconnect 12345
+EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+ssh bandit21@bandit.labs.overthewire.org -p 2220
+
+
+
+
+
+
+
 
 
 
